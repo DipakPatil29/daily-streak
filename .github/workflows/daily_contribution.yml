@@ -1,4 +1,4 @@
-# Permissions block is crucial for allowing the Action to push commits
+# .Permissions block is crucial for allowing the Action to push commits
 permissions:
   contents: write 
 
