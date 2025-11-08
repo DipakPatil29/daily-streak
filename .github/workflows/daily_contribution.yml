@@ -5,7 +5,7 @@ permissions:
 steps:
   - name: Checkout repository
     # Uses the standard action to fetch your code
-    uses: actions/checkout@v4 # Note: Corrected 'actions:checkout@v4' to 'actions/checkout@v4'
+    uses: actions/checkout@v4
 
   - name: Set up Python
     # Installs Python 3.10 environment
