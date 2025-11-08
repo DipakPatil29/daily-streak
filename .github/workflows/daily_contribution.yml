@@ -1,0 +1,18 @@
+# Permissions block is crucial for allowing the Action to push commits
+permissions:
+  contents: write 
+
+steps:
+  - name: Checkout repository
+    # Uses the standard action to fetch your code
+    uses: actions/checkout@v4
+
+  - name: Set up Python
+    # Installs Python 3.10 environment
+    uses: actions/setup-python@v5
+    with:
+      python-version: '3.10'
+
+  - name: Execute Python Script and Commit
+    # Runs the script we created
+    run: python daily_commit.py
